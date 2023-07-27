@@ -31,7 +31,7 @@ if (NOT ${Python3_FOUND})
 endif ()
 
 execute_process(
-    COMMAND pip show Jinja2
+    COMMAND ${Python3_EXECUTABLE} -m pip show Jinja2
     RESULT_VARIABLE EXIT_CODE
     OUTPUT_QUIET
 )

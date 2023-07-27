@@ -59,7 +59,7 @@ add_custom_target(${PROJECT_NAME} ALL DEPENDS
 find_package(Python3 REQUIRED Interpreter)
 
 execute_process(
-    COMMAND pip show pytest
+    COMMAND ${Python3_EXECUTABLE} -m pip show pytest
     RESULT_VARIABLE EXIT_CODE
     OUTPUT_QUIET
 )
